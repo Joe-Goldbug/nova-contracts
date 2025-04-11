@@ -5,7 +5,11 @@ import "forge-std/Test.sol";
 import "../src/TokenFactory.sol";
 import "../src/TokenSwap.sol";
 
-contract TestContract is Test {
+contract ContractTest is Test {
+    function testExample() public {
+        vm.roll(100);
+        assertTrue(true);
+    }
     TokenFactory public factory;
     address public constant OWNER = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
     address public user = address(1);
